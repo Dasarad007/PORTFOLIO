@@ -1,0 +1,216 @@
+/* Fix unwanted horizontal overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ensure smooth background and layout */
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* === Reset & Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* === Container should take full width === */
+.portfolio-container {
+  width: 100%;
+  padding: 2rem 5vw;
+}
+
+/* === Header === */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.portfolio-name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.portfolio-role {
+  font-size: 1.3rem;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-contact {
+  color: #475569;
+  font-size: 1rem;
+}
+
+.portfolio-links {
+  margin-top: 1rem;
+}
+
+.portfolio-links a {
+  display: inline-block;
+  margin: 0 0.6rem;
+  padding: 0.5rem 1.4rem;
+  border: 1.5px solid #2563eb;
+  border-radius: 10px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.portfolio-links a:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+/* === Hero Section === */
+.hero-section {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.hero-section p {
+  color: #475569;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* === Skills Section === */
+.skills-section {
+  max-width: 1300px;
+  margin: 0 auto 3rem;
+}
+
+.skills-section h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skill-card h4 {
+  color: #1e293b;
+  margin-bottom: 0.8rem;
+}
+
+.skill-card li {
+  color: #475569;
+  list-style: none;
+  margin-bottom: 0.3rem;
+}
+
+/* === Projects Section === */
+.projects-section {
+  max-width: 1300px;
+  margin: 0 auto 3rem;
+}
+
+.projects-section h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-card p {
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+.project-links a {
+  margin-right: 1rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* === Contact Section === */
+.contact-section {
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.contact-section a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
